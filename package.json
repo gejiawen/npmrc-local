@@ -1,10 +1,9 @@
 {
   "name": "npmrc-local",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "create a .npmrc file in local project with default registry and disturl config item.",
-  "main": "bin/npmrc",
   "bin": {
-    "npmrc": "./bin/npmrc"
+    "npmrc": "./bin/npmrc.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
