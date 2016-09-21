@@ -63,7 +63,7 @@ function _write(path, content, mode) {
         mode: mode || 0o666
     })
 
-    console.log('generate .npmrc success')
+    console.log('success!!!')
 }
 
 function _generateFile(filePath) {
@@ -93,5 +93,7 @@ function _existNpmRC(filePath) {
 }
 
 function _main() {
-    _existNpmRC(path.resolve(__dirname, '..', '.npmrc'))
+    var filePath = path.resolve(process.cwd(), '.npmrc')
+    console.log('writing path: ' + filePath)
+    _existNpmRC(filePath)
 }
